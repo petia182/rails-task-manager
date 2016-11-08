@@ -1,0 +1,29 @@
+<h2>Create a new task:</h2>
+
+<%= form_for(@task) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.label :status %>
+  <%= f.text_field :status %>
+
+  <%= f.submit %>
+<% end %>
+
+<!--
+<form action="/tasks" method="post">
+  <label for="name">Name: </label>
+  <input type="text" name="task[name]" id="name">
+
+  <label for="description">Description: </label>
+  <input type="text" name="task[description]" id="description">
+
+  <label for="status">Status: </label>
+  <input type="text" name="task[status]" id="status">
+
+  <input type="submit">
+</form> -->
+
